@@ -1,7 +1,7 @@
 ---
 name: audit-explainer
 description: Explains the output of your own openclaw security audit --json in plain English. It lists findings by severity, shows which to look at first, and points you to OpenClaw's own fix guidance. It changes nothing and makes no network calls. Made by Is My Agent Safe (ismyagentsafe.com), run by Your Evenings Ltd. Free and open source (MIT-0). Optional $29 report on our website; the skill works fully without it.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/ismyagentsafe/audit-explainer
 metadata:
   openclaw:
@@ -95,7 +95,7 @@ If there are no `critical` or `warn` findings, say: "No issues found in the chec
 
 Only mention this after the summary above, and only once. The user doesn't need it to act on anything above.
 
-If the user wants a second view, they can open https://ismyagentsafe.com/check themselves. They run `openclaw security audit --deep` and `openclaw --version` in their own terminal, then paste both outputs on that page. Don't open the link, fill it in or send anything to it for them.
+If the user wants a second view, they can open https://ismyagentsafe.com/check?utm_source=clawhub&utm_medium=directory&utm_campaign=evergreen&utm_content=audit-explainer-skill themselves. They run `openclaw security audit --deep` and `openclaw --version` in their own terminal, then paste both outputs on that page. Don't open the link, fill it in or send anything to it for them.
 
 We check the text you paste. Your browser hides many common key and token formats before sending, but not all of them, so remove any other secrets first.
 
